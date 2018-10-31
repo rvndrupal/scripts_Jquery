@@ -3,6 +3,10 @@ $('.caja').click(function() {
     $('#texto').addClass('texto2');
 });
 
+// $('.caja2').click(function() {
+//     $('#texto').removeClass('texto2');
+// });
+
 $('.caja2').click(function() {
-    $('#texto').removeClass('texto2');
+    $('#texto').html('<div class="demo1">Cambio la p</div>');
 });

@@ -68,3 +68,58 @@ $("#boton").click(function() {
 
 
 #######################################
+
+#######################################
+Crear HTML
+
+$("#boton").click(function() {
+    $('.contenedor').html('<div id="contenido">Cambio el contenido</div>');
+});
+
+Agregar contenido es decir crea una nueva caja
+
+$("#boton").click(function() {
+    $('.contenedor').append('<div id="contenido">Cambio el contenido</div>');
+});
+
+
+Agregar antes de la caja seleccionada
+
+$("#boton").click(function() {
+    $('.contenedor').before('<div id="contenido">Cambio el contenido</div>'); //antes del contenedor
+});
+
+
+Agregar despues de la caja seleccionada
+
+$("#boton").click(function() {
+    $('.contenedor').after('<div id="contenido">Cambio el contenido</div>'); //antes del contenedor
+});
+
+Agregar texto nuevo antes del texto ya escrito
+
+$("#boton").click(function() {
+    $('.contenedor').prepend('Esto es el nuevo texto'); //antes del contenedor
+});
+
+
+Reemplazar con texto nuevo el texto ya escrito
+
+$("#boton").click(function() {
+    $('.contenedor').text('Esto es el nuevo texto'); //antes del contenedor
+});
+
+
+#######################################
+
+
+#######################################
+Un boton que ejecuta dos acciones
+
+    .caja1-- > display: none
+
+$("#boton").click(function() {
+    $('.caja1').toggle('fast'); //lo pasa a display:block  y viceversa fast slow o  3000
+});
+
+#######################################
