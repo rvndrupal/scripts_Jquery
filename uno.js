@@ -27,3 +27,44 @@ $("#boton").click(function() {
 });
 
 #######################################
+
+#######################################
+MOSTRAR ATRIBUTOS
+
+var usuario = "";
+var pass = "";
+
+$("#boton").click(function() {
+
+    usuario = $("[type='text']").val();
+    pass = $("[type='password']").val();
+
+    console.log(usaurio + " " + pass)
+
+});
+
+#######################################
+
+#######################################
+Agregar atributo a un elemento
+
+    .caja
+$("#boton").click(function() {
+
+    $('.caja').attr("juan", "cero");
+
+    $('.caja').click(function() {
+        $('#texto').attr("juan", "carlos");
+        $('#texto').addClass('texto2');
+    });
+
+    $('.caja2').click(function() {
+        $('#texto').removeClass('texto2');
+    });
+
+
+
+});
+
+
+#######################################
