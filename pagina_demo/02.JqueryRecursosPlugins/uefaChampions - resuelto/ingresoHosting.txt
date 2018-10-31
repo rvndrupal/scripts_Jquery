@@ -1,0 +1,25 @@
+Main Hosting Details
+Control panel username
+b10_18569511
+Control panel password	**********
+Control panel URL
+cpanel.byethost10.com
+MySQL username
+b10_18569511
+MySQL password
+**********
+MySQL hostname
+sql308.byethost10.com
+FTP username
+b10_18569511
+FTP password
+**********
+FTP host name	ftp.byethost10.com
+
+
+Your Website URL's
+Home page
+http://tutoriales.byethost10.com
+
+
+chrome.exe --allow-file-access-from-files
