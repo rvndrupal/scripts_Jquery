@@ -16,3 +16,38 @@ $(document).mousemove(function(e) { //seleccionar el punto del mouse del documen
 
 
 #######################################
+
+#######################################
+SCROLL EFECTO PARALLAX
+
+$(window).scroll(function() { //EVENTO DEL SCROLL
+
+    var posY = window.pageYOffset; //TOMA LA POSICION DE Y
+
+    $("#bloque2").css({ "top": -180 - posY / 3 + "px" })
+    $("#cristiano").css({ "top": -250 + posY / 5 + "px" })
+    $("#grupos").css({ "margin-left": -100 + posY / 3.3 + "%" }) //ENTRA DESDE LA IZQ ESTA FUERA -100 ESTA CHINGON
+
+    if (posY > $("#bloque2").offset().top) { //CUANDO LA ALTURA SEA MAYOR AL BLOQUE YA LO DEJA EN SU LUGAR OFFSET ES LIMITE
+
+        $("#grupos").css({ "margin": "auto" })
+
+    }
+
+    $("#estadios").css({ "margin-left": 200 - posY / 5.7 + "%" })
+
+    if (posY > $("#bloque3").offset().top) {
+
+        $("#estadios").css({ "margin": "auto" })
+
+    }
+
+})
+
+//OJO MUY IMPORTANTE EN LOS CSS PONER 
+
+overflow - x: hidden //para que no aparezca la barra de desplazamiento
+
+
+
+#######################################

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista</title>
+
+    <style>
+        .respuesta {
+            background: red;
+            width: 400px;
+            height: 300px;
+            margin: 72px 0 0 0px;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="example">
+        <select id="pais">
+            <option value="">Selecciona un Pais</option>
+            <option value="madrid" data-price="180">Madrid</option>
+            <option value="españa" data-price="280">España</option>
+            <option value="méxico" data-price="380">México</option>
+
+        </select>
+        <button>Agregar</button>
+    </div>
+
+    <div class="respuesta">
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="jquery-3.min.js"></script>
+<script>
+    $('.example').on('click', 'button', function() {
+
+        var seleccion = $('.example select option:selected'); //opcion seleccionada
+        var value = seleccion.val();
+        // var precio= seleccion.attr('data-price');
+        var precio = seleccion.data('price');
+
+        console.log(value);
+        console.log(precio);
+
+        if (precio) {
+            $('.respuesta').text('Datos seleccionados: ' + value + precio);
+        } else {
+            $('.respuesta').text('Selecciona un Campo');
+        }
+
+
+
+    });
+</script>
